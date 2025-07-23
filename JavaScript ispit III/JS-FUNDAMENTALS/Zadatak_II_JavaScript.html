@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadatak II JavaScript</title>
+</head>
+<body>
+    <script>
+
+    var A = prompt("Please enter number A: ");
+    var C = prompt("Please enter sign: + - * or / ");
+    var B = prompt("Please enter number B: ");
+
+    var A = Number(A);
+    var B = Number(B);
+
+        if (isNaN(A) || isNaN(B)) {
+            document.write("Invalid input: please enter valid numbers.");
+        }   else {
+            var rezultat;
+
+        if(C === "+") {
+            rezultat = Number(A) + Number(B);
+            document.write ("The sum of the number A and  number B is: "  + rezultat);
+
+        } else if (C === "-") { 
+            rezultat = Number(A) - Number(B);
+            document.write ("The difference of the number A and  number B is: "  + rezultat);
+
+        } else if (C === "*") { 
+            rezultat = Number(A) * Number(B);
+            document.write ("The product of the number A and  number B is: "  + rezultat);
+
+        } else if (C === "/") { 
+            rezultat = Number(A) / Number(B);
+                if (B === 0) {
+                document.write("Error: Division by zero is not allowed.");
+                } else {
+                    document.write ("The quotient of the number A and  number B is: "  + rezultat);
+                } 
+        } else {
+            document.write ("You entered an incorrect value for a number or operation");
+        }
+}
+    </script>
+</body>
+</html>
